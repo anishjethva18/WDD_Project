@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeStore</title>
+    <link rel="icon" href="VibeStore.jpg" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="Contact us.css">
+
+    <script>
+        window.onload = function () {
+            let form = document.querySelector("form");
+
+            form.addEventListener("submit", function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    alert("Please fill out all required fields!");
+                } else {
+                    alert("Thank you for your feedback..!");
+                }
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <!-- ----------------------------- Navbar --------------------------- -->
+
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li id="shopname"><a href="home.html" class="click-btn btn-style"> <b>Vibe</b>Store</a></li>
+                    <li class="click-btn btn-style2"><a href="#Accessories">Accessories</a></li>
+                    <li id="dropdown" class="click-btn btn-style2"><a href="">Clothing</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#Mens">Mens</a></li>
+                            <li><a href="#Womens">Womens</a></li>
+                        </ul>
+                    </li>
+                    <li> <input type="text" id="input" name="searchBox"
+                            placeholder="Search for Clothing and Accessories"></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!------------------------------- contact us form ------------------------------->
+    <form>
+        <div class="container">
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-form">
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Name" required>
+                    <input type="email" class="input" placeholder="Email Address" required>
+                    <input type="tel" class="input" placeholder="Phone" required>
+                    <input type="text" class="input" placeholder="Subject" required>
+                </div>
+                <div class="msg">
+                    <textarea placeholder="Message" required></textarea>
+                    <input type="submit" value="send" id="btn">
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <!------------------------------- Footer ------------------------------->
+    <div id="footer">
+        <footer>
+            <section>
+                <div id="containerFooter">
+
+                    <div id="webFooter">
+                        <h3> online store </h3>
+                        <p> men clothing </p>
+                        <p> women clothing </p>
+                        <p> men accessories </p>
+                        <p> women accessories </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> helpful link </h3>
+                        <p><a href="home.html"> home </a></p>
+                        <p> about </p>
+                        <p><a href="Contact us.html">contact</a></p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> partners </h3>
+                        <p> zara </p>
+                        <p> pantaloons </p>
+                        <p> levis </p>
+                        <p> ucb </p>
+                        <p> + many more </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> address </h3>
+                        <p> k.s. colloge </p>
+                        <p> gujrat university </p>
+                        <p> navrangpura - 380009 </p>
+                        <p> india </p>
+                    </div>
+                </div>
+                <div id="credit">
+                    <a href="https://www.linkedin.com/in/anish-jethva18"> © Anish Jethva </a> |
+                    <a href="https://www.linkedin.com/in/jay-mehta-240b62331"> © Jay Mehta </a> |
+                    <a href="https://www.linkedin.com/in/het-gohel-605b47331"> © Het Gohel </a>
+                </div>
+
+
+            </section>
+
+        </footer>
+    </div>
+</body>
+
+</html>

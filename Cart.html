@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeStore</title>
+    <link rel="icon" href="VibeStore.jpg" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="Cart.css">
+    <script>
+        window.onload = function () {
+            let quantityInputs = document.querySelectorAll("#quantity");
+            quantityInputs.forEach(input => {
+                input.addEventListener("input", function () {
+                    if (this.value <= 0) {
+                        this.value = '';
+                    }
+                });
+            });
+
+            let products = document.querySelectorAll("#product");
+            products.forEach(product => {
+                product.addEventListener("click", function () {
+                    let quantityInput = this.parentElement.querySelector("#quantity");
+
+                    if (!quantityInput.value || quantityInput.value <= 0) {
+                        alert("Enter Quantity");
+                    } else {
+                        // alert("Purchased Successfully");
+                        window.location.href = "Order.html";
+                    }
+                });
+            });
+        };
+    </script>
+</head>
+
+<body>
+
+    <body>
+        <!-- ----------------------------- Navbar --------------------------- -->
+        <div class="header">
+            <header>
+                <nav>
+                    <ul>
+                        <li id="shopname"><a href="home.html" class="click-btn btn-style"> <b>Vibe</b>Store</a></li>
+                        <li class="click-btn btn-style2"><a href="#Accessories">Accessories</a></li>
+                        <li id="dropdown" class="click-btn btn-style2"><a href="">Clothing</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#Mens">Mens</a></li>
+                                <li><a href="#Womens">Womens</a></li>
+                            </ul>
+                        </li>
+                        <li> <input type="text" id="input" name="searchBox"
+                                placeholder="Search for Clothing and Accessories"></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+        <!------------------------------ Add to card  ------------------------------------------------>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="Accessories1.jpg" alt="Product Image1">
+            </div>
+            <div class="product-details">
+                <h1>Bose Earbuds</h1>
+                <p class="desc">Bose New QuietComfort | Wireless Noise Cancelling Earbuds | Lifestyle Bluetooth Earbuds
+                    with
+                    Active Noise Cancellation | Up to 8.5 Hours of Battery Life | Black</p>
+                <h2>Product details</h2>
+                <p> Brand &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Bose
+                    <br>
+                    Colour &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Black
+                    <br>
+                    Form Factor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In Ear <br>
+                    Noise Control &nbsp;&nbsp; Active Noise Cancellation
+                </p>
+                <div class="price">-11% &nbsp;&nbsp;<b>₹14,999</b></div>
+                <input id="quantity" type="number" name="quantity" placeholder="Quantity"><br><br>
+                <button id="product">Buy Now</button>
+
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="Men1.jpg" alt="Product Image1">
+            </div>
+            <div class="product-details">
+                <h1>Campus Shirt</h1>
+                <p class="desc">Men's Shirt for Casual Wear | Spread Collar | Long Sleeve | Regular Fit | Button Closure
+                    |
+                    Cotton Shirt Crafted with Comfort Fit for Everyday Wear</p>
+                <h2>Product details</h2>
+                <p> Brand &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Campus
+                    <br>
+                    Colour &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Blue <br>
+                    Fit Type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Classic Fit <br>
+                    Sleeve Type &nbsp;&nbsp;&nbsp; Full Sleeve
+                </p>
+                <div class="price">-15% &nbsp;&nbsp;<b>₹999</b></div>
+                <input id="quantity" type="number" name="quantity" placeholder="Quantity"><br><br>
+                <button id="product">Buy Now</button>
+
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="Women1.jpg" alt="Product Image1">
+            </div>
+            <div class="product-details">
+                <h1>LEVIS</h1>
+                <p class="desc">Western One Piece Dresses for Women | Knee Length Peter Pan </p>
+                <h2>Product details</h2>
+                <p> Material type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Georgette
+                    <br>
+                    Length
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Knee-Length<br>
+                    Pattern
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Solid<br>
+                    Style
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    A-Line
+                </p>
+                <div class="price">-15% &nbsp;&nbsp;<b>₹999</b></div>
+                <input id="quantity" type="number" name="quantity" placeholder="Quantity"><br><br>
+                <button id="product">Buy Now</button>
+
+            </div>
+        </div>
+
+
+        <!------------------------------- footer ---------------------------------------------------------->
+        <div id="footer">
+            <footer>
+                <section>
+                    <div id="containerFooter">
+
+                        <div id="webFooter">
+                            <h3> online store </h3>
+                            <p> men clothing </p>
+                            <p> women clothing </p>
+                            <p> men accessories </p>
+                            <p> women accessories </p>
+                        </div>
+                        <div id="webFooter">
+                            <h3> helpful link </h3>
+                            <p><a href="home.html"> home </a></p>
+                            <p> about </p>
+                            <p><a href="Contact us.html">contact</a></p>
+                        </div>
+                        <div id="webFooter">
+                            <h3> partners </h3>
+                            <p> zara </p>
+                            <p> pantaloons </p>
+                            <p> levis </p>
+                            <p> ucb </p>
+                            <p> + many more </p>
+                        </div>
+                        <div id="webFooter">
+                            <h3> address </h3>
+                            <p> k.s. colloge </p>
+                            <p> gujrat university </p>
+                            <p> navrangpura - 380009 </p>
+                            <p> india </p>
+                        </div>
+                    </div>
+                    <div id="credit">
+                        <a href="https://www.linkedin.com/in/anish-jethva18"> © Anish Jethva </a> |
+                        <a href="https://www.linkedin.com/in/jay-mehta-240b62331"> © Jay Mehta </a> |
+                        <a href="https://www.linkedin.com/in/het-gohel-605b47331"> © Het Gohel </a>
+                    </div>
+
+                </section>
+            </footer>
+        </div>
+
+    </body>
+
+</html>
+</body>

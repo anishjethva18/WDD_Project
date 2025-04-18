@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeStore</title>
+    <link rel="icon" href="VibeStore.jpg" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="description.css">
+
+    <script>
+        window.onload = function () {
+            document.getElementById("quantity").addEventListener("input", function () {
+                if (this.value <= 0) {
+                    this.value = '';
+                }
+            });
+
+            let purchase = document.getElementById("purchase");
+            purchase.addEventListener("click", function () {
+                if (document.getElementById("quantity").value == "") {
+                    alert("Enter Quantity");
+                }
+                else {
+                    // alert("Purchased Successfully");
+                    window.location.href = "Order.html";
+                }
+            });
+
+            let card = document.getElementById("buy-button");
+            card.addEventListener("click", function () {
+                if (document.getElementById("quantity").value == "") {
+                    alert("Enter Quantity");
+                }
+                else {
+                    // alert("Added to Cart");
+                    window.location.href = "Cart.html";
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <!-----------------------------------  Navbar --------------------------------- -->
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li id="shopname"><a href="home.html" class="click-btn btn-style"> <b>Vibe</b>Store</a></li>
+                    <li class="click-btn btn-style2"><a href="#Accessories">Accessories</a></li>
+                    <li id="dropdown" class="click-btn btn-style2"><a href="">Clothing</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#Mens">Mens</a></li>
+                            <li><a href="#Womens">Womens</a></li>
+                        </ul>
+                    </li>
+                    <li> <input type="text" id="input" name="searchBox"
+                            placeholder="Search for Clothing and Accessories"></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!----------------------------- Accessories4 description --------------------------------- -->
+    <div class="product-container">
+        <div class="product-image">
+            <img src="Accessories4.jpg" alt="Product Image4">
+        </div>
+        <div class="product-details">
+            <h1>Apple Bands</h1>
+            <p class="desc">Apple Watch Series 10 [GPS 46 mm] Smartwatch with Silver Aluminium Case with Denim Sport
+                Band - S/M | Fitness Tracker |
+                ECG App | Always-On Retina Display | Water Resistant </p>
+            <h2>Product details</h2>
+            <p> Operating System
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Ios <br>
+
+                Colour
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                White <br>
+
+                Memory Storage Capacity &nbsp;&nbsp;&nbsp;&nbsp; 64 GB <br>
+
+                Special Feature
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; Sleep Monitor,
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPS
+                <br>
+
+                Connectivity Technology &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wi-Fi 4;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bluetooth
+                5.3
+            </p>
+
+            <div class="price">7% &nbsp;&nbsp;<b> ₹49,900</b></div>
+            <input id="quantity" type="number" name="quantity" placeholder="Quantity"><br><br>
+            <button id="buy-button">Add to Cart</button>
+            <button id="purchase">Buy Now</button>
+
+        </div>
+    </div>
+
+
+    <!-----------------------------------  Footer --------------------------------- -->
+    <div id="footer">
+        <footer>
+            <section>
+                <div id="containerFooter">
+
+                    <div id="webFooter">
+                        <h3> online store </h3>
+                        <p> men clothing </p>
+                        <p> women clothing </p>
+                        <p> men accessories </p>
+                        <p> women accessories </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> helpful link </h3>
+                        <p><a href="home.html"> home </a></p>
+                        <p> about </p>
+                        <p><a href="Contact us.html">contact</a></p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> partners </h3>
+                        <p> zara </p>
+                        <p> pantaloons </p>
+                        <p> levis </p>
+                        <p> ucb </p>
+                        <p> + many more </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> address </h3>
+                        <p> k.s. colloge </p>
+                        <p> gujrat university </p>
+                        <p> navrangpura - 380009 </p>
+                        <p> india </p>
+                    </div>
+                </div>
+                <div id="credit">
+                    <a href="https://www.linkedin.com/in/anish-jethva18"> © Anish Jethva </a> |
+                    <a href="https://www.linkedin.com/in/jay-mehta-240b62331"> © Jay Mehta </a> |
+                    <a href="https://www.linkedin.com/in/het-gohel-605b47331"> © Het Gohel </a>
+                </div>
+
+
+            </section>
+
+        </footer>
+    </div>
+
+</body>
+
+
+</html>

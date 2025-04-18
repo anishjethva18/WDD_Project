@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeStore</title>
+    <link rel="icon" href="VibeStore.jpg" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#containerSlider').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- ----------------------------- Navbar --------------------------- -->
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li id="shopname"><a href="home.html" class="click-btn btn-style"> <b>Vibe</b>Store</a></li>
+                    <li class="click-btn btn-style2"><a href="#Accessories">Accessories</a></li>
+                    <li id="dropdown" class="click-btn btn-style2"><a href="">Clothing</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#Mens">Mens</a></li>
+                            <li><a href="#Womens">Womens</a></li>
+                        </ul>
+                    </li>
+                    <li> <input type="text" id="input" name="searchBox"
+                            placeholder="Search for Clothing and Accessories"></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- ----------------------------- Slider --------------------------- -->
+    <section>
+        <div id="containerSlider">
+            <div id="slidingImage"> <img src="Slider1.jpg" alt="image1"> </div>
+            <div id="slidingImage"> <img src="Slider2.jpg" alt="image2"> </div>
+            <div id="slidingImage"> <img src="Slider3.jpg" alt="image3"> </div>
+            <div id="slidingImage"> <img src="Slider4.jpg" alt="image4"> </div>
+        </div>
+    </section>
+    <br><br><br>
+
+
+    <!------------------------------- cards ----------------------------->
+    <h1 id="Accessories">Accessories</h1>
+    <div class="card-container">
+
+        <div class="card">
+            <a href="Accessories1.html">
+                <img src="Accessories1.jpg" alt="Accessories1">
+                <div class="description">
+                    <h3>BOSE</h3>
+                    <p>QuietComfort Wireless Noise Cancelling Earbuds, Lifestyle Bluetooth Earbuds</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Accessories2.html">
+                <img src="Accessories2.jpg" alt="Accessories2">
+                <div class="description">
+                    <h3>APPLE</h3>
+                    <p>AirPods 4 Wireless Earbuds, Bluetooth Headphones</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Accessories3.html">
+                <img src="Accessories3.jpg" alt="Accessories3">
+                <div class="description">
+                    <h3>Samsung</h3>
+                    <p>Unisex Black Galaxy Fit Fitness Band</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Accessories4.html">
+                <img src="Accessories4.jpg" alt="Accessories4">
+                <div class="description">
+                    <h3>Apple</h3>
+                    <p>Apple Watch Series 10 [GPS 46 mm] Smartwatch with Silver Aluminium Case</p>
+                </div>
+        </div>
+        </a>
+    </div>
+
+    <br><br><br><br>
+
+    <h1 id="Mens">Mens</h1>
+    <div class="card-container">
+
+        <div class="card">
+            <a href="Men1.html">
+                <img src="Men1.jpg" alt="Men1">
+                <div class="description">
+                    <h3>Campus </h3>
+                    <p>Solid Men's Round Neck Cotton Blend Half Sleeve Regular Fit T-Shirts</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Men2.html">
+                <img src="Men2.jpg" alt="Men2">
+                <div class="description">
+                    <h3>Veirdo</h3>
+                    <p>Men's Full Sleeve Corduroy Striped Casual Jacket, Perfect for Western Wear and Stylish Outfits
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Men3.html">
+                <img src="Men3.jpg" alt="Men3">
+                <div class="description">
+                    <h3>Puma</h3>
+                    <p>Men's Full Sleeve Corduroy Striped Casual Jacket, Perfect for Western Wear and Stylish Outfits
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Men4.html">
+                <img src="Men4.jpg" alt="Men4">
+                <div class="description">
+                    <h3>Roadster </h3>
+                    <p>Mens Cotton Plain Tshirt | Round Neck | Full Sleeves | Regular Fit Tshirt for Men.</p>
+                </div>
+        </div>
+        </a>
+    </div>
+
+    <br><br><br><br>
+
+    <h1 id="Womens">Womens</h1>
+    <div class="card-container">
+
+        <div class="card">
+            <a href="Women1.html">
+                <img src="Women1.jpg" alt="Women1">
+                <div class="description">
+                    <h3>LEVIS</h3>
+                    <p>Western One Piece Dresses for Women | Knee Length Peter Pan</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Women2.html">
+                <img src="Women2.jpg" alt="Women2">
+                <div class="description">
+                    <h3>PANTALOONS</h3>
+                    <p>Women's Denim Color Trucker Jacket</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Women3.html">
+                <img src="Women3.jpg" alt="Women3">
+                <div class="description">
+                    <h3>BIBA</h3>
+                    <p>Women's Tropical Printed Rayon Tiered Dress</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="Women4.html">
+                <img src="Women4.jpg" alt="Women4">
+                <div class="description">
+                    <h3>LEE COOPER</h3>
+                    <p> Regular Fit Cotton Blend Formal/Casual White 3</p>
+                </div>
+        </div>
+        </a>
+    </div>
+
+    <br><br><br><br>
+
+
+    <!------------------------------- footer ----------------------------->
+    <div id="footer">
+        <footer>
+            <section>
+                <div id="containerFooter">
+
+                    <div id="webFooter">
+                        <h3> online store </h3>
+                        <p> men clothing </p>
+                        <p> women clothing </p>
+                        <p> men accessories </p>
+                        <p> women accessories </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> helpful link </h3>
+                        <p><a href="home.html"> home </a></p>
+                        <p> about </p>
+                        <p><a href="Contact us.html">contact</a></p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> partners </h3>
+                        <p> zara </p>
+                        <p> pantaloons </p>
+                        <p> levis </p>
+                        <p> ucb </p>
+                        <p> + many more </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> address </h3>
+                        <p> k.s. colloge </p>
+                        <p> gujrat university </p>
+                        <p> navrangpura - 380009 </p>
+                        <p> india </p>
+                    </div>
+                </div>
+                <div id="credit">
+                    <a href="https://www.linkedin.com/in/anish-jethva18"> © Anish Jethva </a> |
+                    <a href="https://www.linkedin.com/in/jay-mehta-240b62331"> © Jay Mehta </a> |
+                    <a href="https://www.linkedin.com/in/het-gohel-605b47331"> © Het Gohel </a>
+                </div>
+
+            </section>
+        </footer>
+    </div>
+
+</body>
+
+</html>
